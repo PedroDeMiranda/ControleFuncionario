@@ -65,7 +65,7 @@ public class FolhaDePagamento {
 			return listaFolha;
 			} 
 			
-			// consultar um Funcionario
+			// consultar uma Folha de pagamento
 				public FolhaDePagamento consultaFolha() throws ClassNotFoundException {
 					Connection con = Conexao.conectar();
 					FolhaDePagamento fol = null;
@@ -88,7 +88,7 @@ public class FolhaDePagamento {
 					return fol;
 				}
 				
-			// alterar Funcionario
+			// alterar Folha de pagamento
 				public boolean alterarFolha() throws ClassNotFoundException {
 					String  sql = "UPDATE Folhapagamento ";
 							sql += "SET idFunc = ?, vlrBruto = ?, vlrInss = ?, vlrLiquido = ? ";
@@ -109,7 +109,7 @@ public class FolhaDePagamento {
 					return true;
 				}
 			
-			// excluir Funcionario
+			// excluir uma Folha de pagamento
 					public boolean excluirFolha() throws ClassNotFoundException {
 						String  sql  = "DELETE FROM Folhapagamento ";
 								sql += "WHERE referfolha = ? ";

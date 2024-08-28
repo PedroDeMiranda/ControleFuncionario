@@ -207,7 +207,7 @@ public class ControleFuncionario {
 					}
 					break;
 				case 2:	
-					// Listar Folha
+					// Listar Folha de pagamento
 					List<FolhaDePagamento> lista = new ArrayList<>();
 					lista = fol.listarFolha();
 					for (FolhaDePagamento f : lista) {
@@ -216,7 +216,7 @@ public class ControleFuncionario {
 					}
 					break;
 				case 3:	
-					// Consultar um Funcionario
+					// Consultar uma Folha de pagamento
     				System.out.println("Informe a refer Folha: ");
     				fol.setReferFolha(sc.nextInt());
     				fol = fol.consultaFolha();
@@ -228,7 +228,7 @@ public class ControleFuncionario {
     				}
 					break;
 				case 4:	
-					// Alterar um Funcionario
+					// Alterar uma Folha de pagamento
 					System.out.println("Informe a refer Folha: ");
     				fol.setReferFolha(sc.nextInt());
     				System.out.print("Informe o novo id do Funcionario: ");
@@ -246,13 +246,13 @@ public class ControleFuncionario {
     				}
 					break;
 				case 5:	
-					// Deletar um Funcionario
+					// Deletar uma Folha de pagamento
     				System.out.print("Informe a refer Folha para exclusão: ");
     				fol.setReferFolha(sc.nextInt());
     				if (fol.excluirFolha()) {
-    					System.out.println("Exclusão do Funcionario efetuada com sucesso");
+    					System.out.println("Exclusão da Folha de pagamento efetuada com sucesso");
     				} else {
-    					System.out.println("Erro ao excluir o Funcionario");
+    					System.out.println("Erro ao excluir Folha de pagamento");
     				}
 					break;
 				case 6:	
